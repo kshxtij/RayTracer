@@ -45,18 +45,18 @@ I had a couple more features that i wanted to implement before submitting this, 
 
 ### Sources
 
-Overview:
+Overview:  
 [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html)  
 [_Ray Tracing: The Next Week_](https://raytracing.github.io/books/RayTracingTheNextWeek.html)  
 [Concurrent and Parallel Programming in Haskell](https://simonmar.github.io/pages/pcph.html) by Simon Marlow  
 
-Material based rendering:
+Material based rendering:  
 [Material Shading (Reflection, Refraction and Fresnel Surfaces)](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-shading/reflection-refraction-fresnel)  
 [UV Mapping](https://conceptartempire.com/uv-mapping-unwrapping/)  
 [Dielectric Materials](http://viclw17.github.io/2018/08/05/raytracing-dielectric-materials/)  
 [Fresnel and Beer's Law](https://graphicscompendium.com/raytracing/11-fresnel-beer)  
 
-More Theoretical and Mathematical understanding: 
+More Theoretical and Mathematical understanding:  
 [Course Materials from Computer Graphics (CMU 15-462/662) at CMU ](http://15462.courses.cs.cmu.edu/fall2021/)  
 [Lecture notes and Course Materials from Computer Graphics (MIT 6-837) at MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-837-computer-graphics-fall-2012/lecture-notes/)  
 [Existential Quantifiers in Haskell](https://wiki.haskell.org/Existential_type#Expanded_example_-_rendering_objects_in_a_raytracer)  
