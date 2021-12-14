@@ -75,7 +75,7 @@ cross (Vec x1 y1 z1) (Vec x2 y2 z2) = Vec x y z
 
 {-# INLINE (.-.) #-}
 (.-.) :: (Num a) => Vec a -> a -> Vec a
-(.-.) v x = fmap (`subtract` x) v
+(.-.) v x = fmap (x `subtract`) v
 
 {-# INLINE (.*.) #-}
 (.*.) :: (Num a) => Vec a -> a -> Vec a
