@@ -1,5 +1,3 @@
-{-# LANGUAGE BangPatterns #-}
-
 module Utils
   ( loop,
     getSecondsNow,
@@ -19,7 +17,7 @@ import Data.Time.LocalTime (getCurrentTimeZone, utcToZonedTime)
 loop :: (a -> Int -> a) -> a -> Int -> a
 loop f v n = go 0 v
   where
-    go !i arg
+    go i arg
       | i == n = arg
       | otherwise = go (i + 1) (f arg i)
 

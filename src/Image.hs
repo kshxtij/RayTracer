@@ -1,4 +1,3 @@
-{-# LANGUAGE BangPatterns #-}
 {-# LANGUAGE FlexibleContexts #-}
 
 module Image (writeImage) where
@@ -77,7 +76,7 @@ createImage width height samplesPerPixel raysPerSample world = Image width heigh
             c = SampledColor (samplesPerPixel, colorVec)
 
 rayColor :: (Hittable a, RandomGen g) => Ray -> a -> g -> Int -> ColorVec -> (ColorVec, g)
-rayColor ray@(Ray _origin direction) world g raysPerSample !acc = if raysPerSample <= 0 then (toColor zero, g) else computeColor
+rayColor ray@(Ray _origin direction) world g raysPerSample acc = if raysPerSample <= 0 then (toColor zero, g) else computeColor
   where
     h = hit world ray 0.001 maxValue
     t = 0.5 * (getY (unit direction) + 1.0)
